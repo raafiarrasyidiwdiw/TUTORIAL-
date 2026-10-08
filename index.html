@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Panduan sederhana dan aman untuk membantu merawat HP agar tetap nyaman digunakan lebih lama.">
+<title>Rawat HP Lebih Lama</title>
+<style>
+:root{
+  --bg:#070a0f;--surface:#0d131b;--surface2:#111a24;--line:#22303c;
+  --text:#eef5f7;--muted:#91a1ae;--accent:#55e0bd;--accent2:#79a9ff;
+  --warning:#ffd166;--danger:#ff8d8d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(900px 500px at 50% -10%,#17312f 0%,transparent 65%),var(--bg);
+color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,10,15,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;letter-spacing:-.4px}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:18px;font-size:.9rem;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.hero{padding:90px 0 70px;text-align:center}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #285149;background:#0d201e;color:var(--accent);
+padding:7px 13px;border-radius:999px;font-size:.85rem;font-weight:700}
+h1{font-size:clamp(2.8rem,8vw,5.8rem);line-height:.98;letter-spacing:-4px;margin:22px auto;max-width:900px}
+.gradient{background:linear-gradient(100deg,var(--text),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:720px;margin:0 auto 30px;color:var(--muted);font-size:1.08rem}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:800}
+.btn.primary{background:var(--accent);color:#06100d;border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:35px auto 0;max-width:700px}
+.stat{background:rgba(13,19,27,.8);border:1px solid var(--line);border-radius:15px;padding:15px}
+.stat b{display:block;font-size:1.35rem}.stat small{color:var(--muted)}
+section{padding:70px 0}
+.section-head{max-width:720px;margin-bottom:30px}
+.eyebrow{color:var(--accent);font-size:.8rem;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+h2{font-size:clamp(1.9rem,5vw,3rem);line-height:1.1;margin:8px 0 12px;letter-spacing:-1px}
+.lead{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:20px;padding:24px}
+.card:hover{transform:translateY(-2px);border-color:#36505d}
+.icon{width:44px;height:44px;border-radius:13px;background:#15272b;display:grid;place-items:center;font-size:1.35rem;margin-bottom:17px}
+.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}
+.tip{margin-top:18px;border-left:3px solid var(--accent);background:#0c1719;padding:17px 18px;border-radius:0 12px 12px 0;color:#c5d2d8}
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:17px}
+.step-no{width:42px;height:42px;border-radius:12px;background:#162a2b;color:var(--accent);display:grid;place-items:center;font-weight:900}
+.step h3{margin:0 0 4px}.step p{margin:0;color:var(--muted)}
+.download{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;background:linear-gradient(135deg,#0d201e,#101822);
+border:1px solid #285149;border-radius:24px;padding:28px}
+.download h3{margin:0 0 5px;font-size:1.3rem}.download p{margin:0;color:var(--muted)}
+.download .btn{white-space:nowrap}
+.notice{border:1px solid #4a4126;background:#18160e;border-radius:18px;padding:20px;color:#d8d0b9}
+footer{border-top:1px solid var(--line);padding:40px 0 55px;color:var(--muted)}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){
+  .nav-links{display:none}.hero{padding:65px 0 50px}h1{letter-spacing:-2.5px}
+  .grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
+  .download{grid-template-columns:1fr}.download .btn{width:100%;text-align:center}
+  section{padding:50px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#">Rawat<span>HP</span>.</a>
+    <div class="nav-links">
+      <a href="#tutorial">Tutorial</a>
+      <a href="#baterai">Baterai</a>
+      <a href="#download">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="badge">● Panduan HP • Tanpa Root</div>
+    <h1>Rawat HP agar tetap <span class="gradient">nyaman lebih lama.</span></h1>
+    <p>
+      Kumpulan kebiasaan sederhana untuk membantu menjaga baterai, suhu,
+      penyimpanan, dan kesehatan penggunaan HP sehari-hari.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#tutorial">Mulai belajar →</a>
+      <a class="btn" href="#download">Lihat file</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>🔋</b><small>Perawatan baterai</small></div>
+      <div class="stat"><b>🌡️</b><small>Kontrol suhu</small></div>
+      <div class="stat"><b>🛡️</b><small>Kebiasaan aman</small></div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+<section id="tutorial">
+  <div class="section-head">
+    <div class="eyebrow">01 • Dasar</div>
+    <h2>Kebiasaan kecil, dampak jangka panjang.</h2>
+    <p class="lead">Tidak perlu root atau mengubah sistem secara berisiko untuk mulai merawat HP.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="icon">🌡️</div><h3>Jaga suhu</h3><p>Jika HP terasa sangat panas, kurangi penggunaan berat dan beri waktu perangkat untuk mendingin.</p></article>
+    <article class="card"><div class="icon">🔌</div><h3>Charger berkualitas</h3><p>Gunakan charger dan kabel yang sesuai spesifikasi perangkat dan berasal dari sumber yang tepercaya.</p></article>
+    <article class="card"><div class="icon">💾</div><h3>Kelola penyimpanan</h3><p>Hapus file yang tidak dibutuhkan dan sisakan ruang agar perangkat tetap nyaman digunakan.</p></article>
+    <article class="card"><div class="icon">🔄</div><h3>Pembaruan resmi</h3><p>Gunakan pembaruan resmi ketika tersedia untuk mendapatkan perbaikan bug dan keamanan.</p></article>
+    <article class="card"><div class="icon">📱</div><h3>Gunakan seperlunya</h3><p>Hindari sesi penggunaan sangat berat yang panjang ketika perangkat sudah panas atau baterai rendah.</p></article>
+    <article class="card"><div class="icon">🛡️</div><h3>Jangan asal hapus</h3><p>Jangan menonaktifkan aplikasi sistem jika belum memahami fungsinya. Risiko gangguan sistem bisa muncul.</p></article>
+  </div>
+</section>
+
+<section id="baterai">
+  <div class="section-head">
+    <div class="eyebrow">02 • Baterai</div>
+    <h2>Perhatikan panas saat mengisi daya.</h2>
+    <p class="lead">Suhu adalah salah satu hal penting yang perlu diperhatikan selama penggunaan dan pengisian daya.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-no">01</div><div><h3>Gunakan aksesori yang sesuai</h3><p>Pilih charger dan kabel yang kompatibel dengan HP dan memiliki kualitas yang dapat dipercaya.</p></div></div>
+    <div class="step"><div class="step-no">02</div><div><h3>Perhatikan kondisi HP</h3><p>Jika perangkat menjadi sangat panas saat charging, hentikan aktivitas berat dan biarkan suhu turun.</p></div></div>
+    <div class="step"><div class="step-no">03</div><div><h3>Jangan mengejar angka secara berlebihan</h3><p>Kebiasaan penggunaan sehari-hari yang stabil lebih penting daripada terus-menerus mengejar metode ekstrem.</p></div></div>
+  </div>
+  <div class="tip">💡 <strong>Tips:</strong> Gunakan fitur monitoring untuk mengetahui pola suhu dan pengisian daya perangkatmu sendiri.</div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="eyebrow">03 • Aman</div>
+    <h2>Hal yang sebaiknya dihindari.</h2>
+  </div>
+  <div class="notice">
+    <strong>⚠️ Hindari eksperimen sistem yang tidak perlu.</strong><br>
+    Root, modifikasi sistem, menghapus aplikasi bawaan, atau memasang APK dari sumber tidak dikenal
+    dapat menimbulkan risiko. Untuk tutorial umum, prioritaskan fitur bawaan HP dan aplikasi dari sumber tepercaya.
+  </div>
+</section>
+
+<section id="download">
+  <div class="section-head">
+    <div class="eyebrow">04 • File pendukung</div>
+    <h2>Battery Sound Notification</h2>
+    <p class="lead">File yang kamu berikan saya tempatkan sebagai arsip pendukung tutorial.</p>
+  </div>
+  <div class="download">
+    <div>
+      <h3>📦 battery-sound-notification.7z</h3>
+      <p>Arsip aplikasi asli yang kamu kirim.</p>
+    </div>
+    <a class="btn primary" href="files/battery-sound-notification.7z" download>⬇️ Unduh</a>
+  </div>
+  <div class="tip">🛡️ Sebelum memasang aplikasi, periksa sumber file dan izin yang diminta. Pastikan kamu memahami fungsi aplikasi tersebut.</div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>RawatHP.</strong><br>Berbagi pengetahuan, bukan sekadar tips.</div>
+    <div>© 2026 • Dibuat untuk penggunaan HP yang lebih bijak ☺</div>
+  </div>
+</footer>
+</body>
+</html>
